@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-rikkiebobby-djangopytho-tbnmcqwfj81.ws-eu108.gitpod.io',
+    '8000-rikkiebobby-djangopytho-dk2daadj5w1.ws-eu108.gitpod.io',
 ]
 
 
@@ -82,6 +83,13 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com",
+    "https://*.gitpod.com",
+    "https://8000-rikkiebobby-djangopytho-dk2daadj5w1.ws-eu108.gitpod.io",
+]
 
 
 # Password validation
