@@ -26,9 +26,7 @@ SECRET_KEY = 'django-insecure-hnr5*ta-_y!=o+$9py)auksd^!6=1f1)m*^7ytsly@u7@5c=09
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-rikkiebobby-djangopytho-tbnmcqwfj81.ws-eu108.gitpod.io',
-    '8000-rikkiebobby-djangopytho-dk2daadj5w1.ws-eu108.gitpod.io',
-    '8000-rikkiebobby-djangopytho-x68y7czhp8w.ws-eu108.gitpod.io',
+    '8000-rikkiebobby-djangopytho-iyjhm4l5a5c.ws-eu108.gitpod.io'
 ]
 
 
@@ -89,8 +87,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
     "https://*.gitpod.com",
-    "https://8000-rikkiebobby-djangopytho-dk2daadj5w1.ws-eu108.gitpod.io",
-    "https://8000-rikkiebobby-djangopytho-x68y7czhp8w.ws-eu108.gitpod.io",
+    "https://8000-rikkiebobby-djangopytho-iyjhm4l5a5c.ws-eu108.gitpod.io",
 ]
 
 
