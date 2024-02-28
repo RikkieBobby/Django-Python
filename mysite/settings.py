@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-hnr5*ta-_y!=o+$9py)auksd^!6=1f1)m*^7ytsly@u7@5c=09
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-rikkiebobby-djangopytho-iyjhm4l5a5c.ws-eu108.gitpod.io'
+    '8000-rikkiebobby-djangopytho-iyjhm4l5a5c.ws-eu108.gitpod.io',
+    '8000-rikkiebobby-djangopytho-tlpc0fy1861.ws-eu108.gitpod.io',
 ]
 
 
@@ -39,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "crispy_forms",
+    "crispy_bootstrap4",
+    'bootstrap4',
     'main',
     'register',
 ]
@@ -132,3 +136,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
