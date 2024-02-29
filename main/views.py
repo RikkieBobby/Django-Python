@@ -22,7 +22,7 @@ def index(response, id):
         elif response.POST.get("newItem"):
             txt = response.POST.get("new")
 
-            if len(text) > 2:
+            if len(txt) > 2:
                 ls.item_set.create(text=txt, complete=False)
             else:
                 print("invalid")
@@ -43,6 +43,7 @@ def create(response):
             n = form.cleaned_data["name"]
             t = TodoList(name=n)
             t.save()
+            response.user.todolist.add(t)
 
             return HttpResponseRedirect("/%i" %t.id)
 
@@ -50,3 +51,7 @@ def create(response):
         form = CreateNewList()
 
     return render(response, "main/create.html", {"form": form})
+
+
+def view(response):
+    return render(response, "main/view.html", {})
