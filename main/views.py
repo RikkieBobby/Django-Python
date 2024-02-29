@@ -35,6 +35,7 @@ def home(response):
 
 
 def create(response):
+    response.user
     if response.method == "POST":
         form = CreateNewList(response.POST)
 

@@ -93,6 +93,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com",
     "https://*.gitpod.com",
     "https://8000-rikkiebobby-djangopytho-iyjhm4l5a5c.ws-eu108.gitpod.io",
+    "https://8000-rikkiebobby-djangopytho-tlpc0fy1861.ws-eu108.gitpod.io",
 ]
 
 
@@ -141,3 +142,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+LOGIN_REDIRECT_URL = "/"
+
+LOGOUT_REDIRECT_URL = "/"
